@@ -1,16 +1,18 @@
 function toggleMenu() {
     const menu = document.getElementById('dropdown-menu');
     const button = document.querySelector('.menu-btn');
-
-    // Toggle menu visibility
     if (menu.style.display === 'block') {
         menu.style.display = 'none';
     } else {
         menu.style.display = 'block';
     }
-
-    // Toggle active state for the button
     button.classList.toggle('active');
+}
+
+function toggleSubMenu(event) {
+    event.preventDefault(); // Evita che il link venga attivato
+    const parent = event.target.parentElement;
+    parent.classList.toggle('open');
 }
 
 window.addEventListener('click', function (event) {

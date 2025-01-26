@@ -26,6 +26,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    white-space: nowrap;
 }
 
 .menu-btn {
@@ -45,7 +46,7 @@ body {
 }
 
 .menu-btn:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15);
 }
 
 .menu-btn .bar {
@@ -84,4 +85,43 @@ body {
 
 .menu a:last-child {
     border-bottom: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: relative;
+    background-color: #444;
+    margin-left: 0px;
+    /*border: 1px solid #555;*/
+}
+
+.submenu a {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.dropdown.open .submenu {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar .title {
+        font-size: 18px; /* Riduci la dimensione del titolo */
+        max-width: 70%; /* Limita la larghezza del titolo */
+    }
+    .menu {
+        width: 80%; /* Fai occupare più spazio al menu */
+        right: 10%; /* Centrato rispetto allo schermo */
+    }
+    .menu-btn {
+        width: 25px; /* Riduci la dimensione del bottone */
+        height: 18px;
+    }
+    .menu-btn .bar {
+        height: 1px; /* Barre più sottili */
+    }
 }

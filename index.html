@@ -14,12 +14,33 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </button>
-            <div class="title">Tornei Sportivi Fazzini-Mercantini</div>
+            <div class="title">Tornei Sportivi Fazzini Mercantini</div>
             <div class="menu" id="dropdown-menu">
-                <a href="#">Home</a>
-                <a href="#">voce 1</a>
-                <a href="#">voce 2</a>
-                <a href="#">voce 3</a>
+                <div class="dropdown">
+                    <a href="#" onclick="toggleSubMenu(event)">HOME ▼</a>
+                    <div class="submenu">
+                        <a href="#">HOME</a>
+                        <a href="#">HOME voce 2</a>
+                        <a href="#">HOME voce 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" onclick="toggleSubMenu(event)">BACHECA ▼</a>
+                    <div class="submenu">
+                        <a href="#">BACHECA</a>
+                        <a href="#">BACHECA voce 2</a>
+                        <a href="#">BACHECA voce 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" onclick="toggleSubMenu(event)">SPORT ▼</a>
+                    <div class="submenu">
+                        <a href="#">SPORT</a>
+                        <a href="#">SPORT voce 2</a>
+                        <a href="#">SPORT voce 3</a>
+                    </div>
+                </div>
+                <a href="#">CONTATTI</a>
             </div>
         </div>
         
