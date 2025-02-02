@@ -3,14 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-        <script src="./assets/js/script.js"></script>
-        <title>HOME</title>
+        <script src="../assets/js/script.js"></script>
+        <title>CALCIO</title>
     </head>
     <body>
         <div class="navbar">
-            <img src="./assets/media/" alt="Logo" class="logo">  <!--Aggiungere logo-->
+            <a href="../index.html"><img src="./assets/media/" alt="Logo" class="logo"></a>  <!--Aggiungere logo-->
             <div class="title">Tornei Sportivi Fazzini Mercantini</div>
             <button class="menu-btn" onclick="toggleMenu()">
                 <span class="bar"></span>
@@ -19,30 +19,24 @@
             </button>
             <div class="menu" id="dropdown-menu">
                 <div class="dropdown">
+                    <a href="#" onclick="toggleSubMenu(event)">HOME ▼</a>
+                    <div class="submenu">
+                        <a href="../index.html">HOME</a>
+                    </div>
+                </div>
+                <div class="dropdown">
                     <a href="#" onclick="toggleSubMenu(event)">BACHECA ▼</a>
                     <div class="submenu">
                         <a href="">BACHECA</a>
                         <a href="">COMING SOON</a>
                     </div>
                 </div>
-                <div class="dropdown">
-                    <a href="#" onclick="toggleSubMenu(event)">SPORT ▼</a>
-                    <div class="submenu">
-                        <a href="#">SPORT</a>
-                        <a href="./pages/calcetto.html">CALCIO</a>
-                        <a href="">COMING SOON</a>
-                    </div>
-                </div>
                 <a href="#">CONTATTI</a>
             </div>
         </div>
-        <div style="height: 700px;">
-            <div class="fade-in-text">Benvenuto nel sito dei tornei sportivi del Fazzini Mercantini</div>
-            <p class="slide-in-text">In questo sito sono presenti tutte le informazioni quali calendario delle partite, squadre e classifiche di tutti i tornei sposrtivi del Fazzini Mercantini<br><br>Scopri tutti i dettagli sui tornei:</p>
-            <a href="./pages/calcetto.html" class="button-link" id="torneo-button">Partecipa al Torneo di Calcio</a>
-        </div>
-        <div>
-
+        <div style="height: 1200px;">
+            <div class="fade-in-text">TORNEO DI CALCIO 2025</div>
+            <p class="slide-in-text">In arrivo tutte le novità sull'edizione del 2025 del torneo di calcio. Tutte le partite verranno giocate nella palestra della nostra scuola<br><br>STAY TUNED PER TUTTE LE NOVITA'</p>
         </div>
         <footer class="footer">
             <div class="footer-content">
