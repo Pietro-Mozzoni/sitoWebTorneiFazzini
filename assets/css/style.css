@@ -1,257 +1,50 @@
 body {
-    margin: 0;
-    margin-top: 150px;
-    background-color: #1c1c1c;
     font-family: 'Montserrat', sans-serif;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.hero-section {
+    min-height: 100vh;
+    padding-top: 6rem;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .navbar {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    background-color: #000000;
-    color: white;
-    padding: 10px 20px;
-    height: 70px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-.logo{
-    height: 50%;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 15px;
-}
-
-.navbar .title {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    white-space: nowrap;
-}
-
-.menu-btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 25px;
-    background: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    position: relative;
-    z-index: 10;
-    padding: 5px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    margin-left: auto;
-    margin-right: 30px;
-}
-
-.menu-btn:hover {
-    background: rgba(255, 255, 255, 0.15);
-}
-
-.menu-btn .bar {
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    border-radius: 2px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 50px;
-    width: 200px;
-    background-color: #333;
-    border: 1px solid #444;
-    border-radius: 5px;
-    overflow: hidden;
-    z-index: 999;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.menu a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    border-bottom: 1px solid #ffffff;
-    text-align: center;
-}
-
-.menu a:hover {
-    background-color: #555;
-}
-
-.menu a:last-child {
-    border-bottom: none;
-}
-
-.dropdown {
-    position: relative;
-}
-
-.submenu {
-    display: none;
-    position: relative;
-    background-color: #444;
-    margin-left: 0px;
-    /*border: 1px solid #555;*/
-}
-
-.submenu a {
-    padding: 10px 20px;
-    border-bottom: 1px solid #ffffff;
-}
-
-.dropdown.open .submenu {
-    display: block;
-}
-/*FINE CONTENUTO NAVBAR*/
-.fade-in-text {
-    opacity: 0; 
-    transform: translateY(50px); 
-    animation: fadeInUp 1s ease-out forwards;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-    margin-top: 20px; 
-    position: absolute;
-    left: 50%;
-    text-align: center;
-    width: 90%;
-    max-width: 600px;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translate(-50%, 50px);
-    }
-    to {
-        opacity: 1;
-        transform: translate(-50%, -50%);
-    }
-}
-
-.slide-in-text {
-    position: absolute;
-    left: -100%; /* Partirà fuori dallo schermo a sinistra */
-    top: 30%;
-    transform: translateY(-50%);
-    opacity: 0;
-    font-size: 1.2rem;
-    font-weight: normal;
-    color: white;
-    animation: slideInLeft 1s ease-out forwards;
-    width: 90%;
-    max-width: 600px;
-    text-align: center;
-}
-
-@keyframes slideInLeft {
-    from {
-        left: -100%; /* Partirà completamente fuori schermo */
-        opacity: 0;
-    }
-    to {
-        left: 50%; /* Arriva al centro orizzontale dello schermo */
-        opacity: 1;
-        transform: translateX(-50%) translateY(-50%); /* Centro verticale e orizzontale */
-    }
-}
-
-#torneo-text {
-    left: -100%; /* Parte fuori dallo schermo a sinistra */
-    top: 60%; /* Regola la posizione verticale */
-    opacity: 0;
-    font-size: 1.2rem;
-    font-weight: normal;
-    color: white;
-    animation: slideInLeft 1s ease-out forwards;
-    width: 90%;
-    max-width: 600px;
-    text-align: center;
-}
-
-/* Pulsante per il torneo */
-.button-link {
-    display: inline-block;
+.btn-primary {
     background-color: #007bff;
-    color: white;
-    padding: 12px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 1rem;
-    margin-top: 20px;
-    transition: background-color 0.3s;
+    border-color: #007bff;
+    transition: all 0.3s ease;
 }
 
-/* Hover per il pulsante */
-.button-link:hover {
+.btn-primary:hover {
     background-color: #0056b3;
+    border-color: #0056b3;
+    transform: translateY(-2px);
 }
 
-
-/*INIZIO CONTENUTO FOOTER*/
 .footer {
-    background-color: #000;  
-    color: white;            
-    text-align: center;      
-    padding: 15px 10px;     
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
-    font-size: 14px;
+    background-color: #000;
+    padding: 2rem 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
 }
 
-.footer-content {
-    max-width: 1244px;
-    margin: 0 auto;
-}
-/*FINE CONTENUTO FOOTER*/
-@media screen and (max-width: 768px) {
-    .navbar .title {
-        font-size: 18px; 
-        max-width: 70%; 
+/* Custom navbar styles */
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
     }
-    .menu {
-        width: 80%; 
-        right: 10%; 
-        border-radius: 10px;
-        width: 200px;
-    }
-    .menu-btn {
-        width: 25px;
-        height: 18px;
-    }
-    .menu-btn .bar {
-        height: 1px;
-    }
-
-    body {
-        position: relative;
-    }
-    #torneo-button {
-        position: absolute;  
-        bottom: 400px;   
-        left: 50%;     
-        transform: translateX(-50%);
-        display: inline-block;
+    
+    .navbar-nav .dropdown:hover .dropdown-menu {
+        display: block;
     }
 }
