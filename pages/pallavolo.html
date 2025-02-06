@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tornei Sportivi Fazzini Mercantini</title>
+    <title>Calcio - Tornei Sportivi Fazzini Mercantini</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">        
+    
+    <link rel="stylesheet" href="../assets/css/style.css">        
+
 </head>
 <body>
     <!-- Navbar -->
@@ -19,31 +21,25 @@
                 <img src="./assets/media/logo.webp" width="60px" alt="Logo" class="rounded-circle me-2">
                 Tornei Sportivi
             </a>
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">HOME</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                             CLASSIFICHE
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="./pages/calcetto.html">Calcio</a></li>
-                            <li><a class="dropdown-item" href="./pages/pallavolo.html">Pallavolo</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            SPORT
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="./pages/calcetto.html">Calcio</a></li>
-                            <li><a class="dropdown-item" href="./pages/pallavolo.html">Pallavolo</a></li>
+                            <li><a class="dropdown-item" href="./calcetto.html">Calcio</a></li>
+                            <li><a class="dropdown-item" href="./pallavolo.html">Pallavolo</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/contatti.html">CONTATTI</a>
+                        <a class="nav-link" href="#">CONTATTI</a>
                     </li>
                 </ul>
             </div>
@@ -53,14 +49,17 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container text-center">
-            <h1 class="display-4 mb-4">Benvenuto nel sito dei tornei sportivi del Fazzini Mercantini</h1>
-            <p class="lead mb-5">
-                In questo sito sono presenti tutte le informazioni quali calendario delle partite, 
-                squadre e classifiche di tutti i tornei sportivi del Fazzini Mercantini
-            </p>
-            <a href="./pages/calcetto.html" class="btn btn-primary btn-lg">
-                Partecipa al Torneo di Calcio
-            </a>
+            <h1 class="display-4 mb-4">TORNEO DI PALLAVOLO 2025</h1>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p class="lead mb-5">
+                        In arrivo tutte le novità sull'edizione del 2025 del torneo di pallavolo. 
+                        Tutte le partite verranno giocate nella palestra della nostra scuola.
+                        <br><br>
+                        <h2><strong>CREAZIONE GIRONI IN CORSO... (attendiamo informazioni dal gestore del torneo nella scuola)</strong></h2>
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -70,7 +69,7 @@
             <p class="mb-1"><strong>© 2025 Tornei Sportivi Fazzini Mercantini</strong></p>
             <p class="mb-1"><strong>Contatti:</strong> Pietro Mozzoni & Daniele Colucci</p>
             <p class="mb-1"><strong>Data di pubblicazione:</strong> 02/02/2024</p>
-            <p class="mb-0"><strong>Ultima revisione:</strong> 06/02/2024</p>
+            <p class="mb-0"><strong>Ultima revisione:</strong> 02/02/2024</p>
         </div>
     </footer>
 
